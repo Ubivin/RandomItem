@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "item.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -32,6 +33,12 @@ int main(int argc, const char * argv[]) {
             //log the description of the item
             NSLog(@"%@", item);
         }
+        
+        Item *itemi = [[Item alloc] init];
+        
+    NSLog(@"%@ %@ %@ %d",[itemi itemName],[itemi dateCreated],
+              [itemi serialNumber], [itemi valueInDollars]);
+        
         
         //destroy the mutable array objects
         items = nil;
