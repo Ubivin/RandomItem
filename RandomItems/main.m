@@ -36,8 +36,18 @@ int main(int argc, const char * argv[]) {
         
         Item *itemi = [[Item alloc] init];
         
-    NSLog(@"%@ %@ %@ %d",[itemi itemName],[itemi dateCreated],
-              [itemi serialNumber], [itemi valueInDollars]);
+        //this creates an NSString, "Red Sofa" and gives it to the item
+        itemi.itemName = @"Red Sofa";
+        
+        //This creates an NSString, "A1B2C" and gives it to the item
+        itemi.SerialNumber = @"A1B2C";
+        
+        //This sends the value of 100 to be used as valueInDollars of the item
+        itemi.ValueInDollars = 100;
+        
+        
+    NSLog(@"%@ %@ %@ %d",itemi.itemName,itemi.dateCreated,
+              itemi.serialNumber, itemi.valueInDollars);
         
         
         //destroy the mutable array objects
