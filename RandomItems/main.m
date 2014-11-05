@@ -46,9 +46,11 @@ int main(int argc, const char * argv[]) {
         itemi.ValueInDollars = 100;
         
         
-    NSLog(@"%@ %@ %@ %d",itemi.itemName,itemi.dateCreated,
-              itemi.serialNumber, itemi.valueInDollars);
+ //The %@ token is replaced with the result of sending the description to the corresponding argument
         
+        NSLog(@"%@",itemi);
+        
+    
         
         //destroy the mutable array objects
         items = nil;
