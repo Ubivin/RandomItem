@@ -15,6 +15,7 @@
     int _valueInDollars;
     NSDate *_dateCreated;
 }
++(instancetype)randomItem;
 
 -(void)setItemName:(NSString *)str;
 

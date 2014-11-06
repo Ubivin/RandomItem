@@ -18,37 +18,24 @@ int main(int argc, const char * argv[]) {
         /*send the message addObject: to the NSMutableArray pointed to by the variable items, passing
         a string each time */
         
-        [items addObject:@"One"];
-        [items addObject:@"Two"];
-        [items addObject:@"Three"];
-        
-        //send another message, insertObject:atIndex:, to that same array object
-        
-        [items insertObject:@"Zero" atIndex:0];
-        
-        //For every item in the items array...
-        
-        for (NSString *item in items){
+        for (int i = 0; i < 10; i++){
             
-            //log the description of the item
-            NSLog(@"%@", item);
+            Item *itemi = [Item randomItem];
+            
+            [items addObject: itemi];
+            
         }
         
-        Item *itemi = [[Item alloc] init];
+        for (Item *itemi in items) {
+            
+            NSLog(@"%@",itemi);
+        }
         
-        //this creates an NSString, "Red Sofa" and gives it to the item
-        itemi.itemName = @"Red Sofa";
-        
-        //This creates an NSString, "A1B2C" and gives it to the item
-        itemi.SerialNumber = @"A1B2C";
-        
-        //This sends the value of 100 to be used as valueInDollars of the item
-        itemi.ValueInDollars = 100;
-        
-        
- //The %@ token is replaced with the result of sending the description to the corresponding argument
-        
-        NSLog(@"%@",itemi);
+//        
+//        
+// //The %@ token is replaced with the result of sending the description to the corresponding argument
+//        
+//        NSLog(@"%@",items);
         
     
         
