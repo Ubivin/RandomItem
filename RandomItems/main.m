@@ -26,6 +26,8 @@ int main(int argc, const char * argv[]) {
             
         }
         
+
+        
         for (Item *itemi in items) {
             
             NSLog(@"%@",itemi);
