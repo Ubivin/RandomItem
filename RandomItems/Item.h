@@ -1,10 +1,4 @@
-//
-//  Item.h
-//  RandomItems
-//
-//  Created by Jason Hoang on 11/1/14.
-//  Copyright (c) 2014 Jason Hoang. All rights reserved.
-//
+
 
 #import <Foundation/Foundation.h>
 
