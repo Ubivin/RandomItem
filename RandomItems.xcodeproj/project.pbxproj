@@ -41,6 +41,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0406D0861A1B3040003F70FA /* Sample Project */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Sample Project";
+			sourceTree = "<group>";
+		};
 		04FDC32F1A007EE500BAF067 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +70,7 @@
 				04FDC33B1A007EE600BAF067 /* main.m */,
 				04CFDE891A05F7A3000177CE /* Item.h */,
 				04CFDE8A1A05F7A3000177CE /* Item.m */,
+				0406D0861A1B3040003F70FA /* Sample Project */,
 			);
 			path = RandomItems;
 			sourceTree = "<group>";
